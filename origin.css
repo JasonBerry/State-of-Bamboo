@@ -1,0 +1,16 @@
+.build .Successful,
+.build .Successful .details-ext {
+    background-color: #196899 !important;
+}
+
+.build .Failed,
+.build .Failed .details-ext {
+    background-color: #73182C !important;
+}
+
+.build .Successful .plan-name,
+.build .Failed .plan-name {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.2) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
