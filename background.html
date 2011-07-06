@@ -1,8 +1,11 @@
 <html>
 <head>
 	<script>
+	    var cssLoaded = false;
 		function toggleOriginStyles() {
-			chrome.tabs.insertCSS(null, { file: "origin.css" });
+		    if (!cssLoaded) {
+    			chrome.tabs.insertCSS(null, { file: "origin.css" }, function () { cssLoaded = true; });
+			}
 		}
 		chrome.browserAction.onClicked.addListener(toggleOriginStyles);
 	</script>
