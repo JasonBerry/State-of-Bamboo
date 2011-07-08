@@ -1,16 +1,22 @@
-.build .Successful,
-.build .Successful .details-ext {
-    background-color: #196899 !important;
+.origin-nsw .build .Successful,
+.origin-nsw .build .Successful .details-ext,
+.origin-qld .build .Failed,
+.origin-qld .build .Failed .details-ext {
+    background-color: #196899;
 }
 
-.build .Failed,
-.build .Failed .details-ext {
-    background-color: #73182C !important;
+.origin-nsw .build .Failed,
+.origin-nsw .build .Failed .details-ext,
+.origin-qld .build .Successful,
+.origin-qld .build .Successful .details-ext {
+    background-color: #73182C;
 }
 
-.build .Successful .plan-name,
-.build .Failed .plan-name {
-    background-color: rgba(255, 255, 255, 0.1) !important;
-    border-top: 1px solid rgba(0, 0, 0, 0.2) !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+.origin-nsw .build .Successful .plan-name,
+.origin-nsw .build .Failed .plan-name,
+.origin-qld .build .Successful .plan-name,
+.origin-qld .build .Failed .plan-name {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
